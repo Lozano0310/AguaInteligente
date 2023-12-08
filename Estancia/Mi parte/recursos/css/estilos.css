@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color de fondo del cuerpo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #80D7F3; /* Color de fondo del encabezado */
+    color: #000000; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    text-align: center;
+    display: flex; /* Activa el modelo de caja flexible */
+    justify-content: space-between; /* Distribuye los elementos a lo largo del eje principal */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+header img {
+    max-width: 300px; /* Ajusta el ancho máximo de la primera imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+#logo {
+    flex: 1; /* Hace que el logo ocupe todo el espacio posible */
+}
+
+#texto {
+    flex: 2; /* Hace que el texto ocupe el doble de espacio que las imágenes */
+}
+
+#imagen-derecha {
+    max-width: 100px; /* Ajusta el ancho máximo de la segunda imagen */
+    order: 3; /* Cambia el orden de visualización a la derecha */
+    margin-right: 30px;
+    width: 50px;
+}
+
+#login-box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #000; /* Borde negro */          
+    background-color: #80D7F3;
+    text-align: center;
+    margin: 20px auto; /* Centra el formulario */
+}
+
+#login-box img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#user-type {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#login-button {
+    background-color: #80AEF3; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ajusta el ancho al 100% */
+}
+
+#login-button img {
+    max-width: 20px;
+    margin-left: 5px;
+}
+
+footer {
+    background-color: #80D7F3; /* Color de fondo del pie de página */
+    color: #000000; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    text-align: center;
+    display: flex; /* Activa el modelo de caja flexible */
+    justify-content: space-between; /* Distribuye los elementos a lo largo del eje principal */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-top: auto;
+}
+
+footer img {
+    max-width: 80px; /* Ajusta el ancho máximo de los logos en el pie de página */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+#aviso-logo, #sistemas-logo, #terminos-logo {
+    flex: 1; /* Hace que los logos ocupen todo el espacio posible */
+}
+
+#aviso-texto, #sistemas-texto, #terminos-texto {
+    flex: 2; /* Hace que los textos ocupen el doble de espacio que los logos */
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #BFD5DE ;
+  }
+  .card-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+  }
+  .card-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 20px;
+  }
+
+  .info{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .card-body {
+    text-align: center;
+}
+.logo {
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+    margin-right: 50px;
+}
+.button {
+    margin-top: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.on {
+    background-color: green;
+    color: white;
+}
+.off {
+    background-color: red;
+    color: white;
+}
+
+.columna {
+    height: 100vh; /* Altura total de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}

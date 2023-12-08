@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./recursos/css/estilos.css">
+  <script src="./recursos/js/validacion.js"></script>
+ 
+</head>
+
+<body>
+    <header>
+      
+        <img src="./recursos/imagenes/conagua.png" alt="Imagen Izquierda">
+        <div id="logo">
+            <h1>Agua Inteligente</h1>
+        </div>
+        <img id="imagen-derecha" src="./recursos/imagenes/web.png" alt="Imagen Derecha">
+    </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card" onclick="window.location.href='PuntosMonitoreo.html'">
+          <div class="card-body">
+            <h5 class="card-title">Puntos de monitoreo</h5>
+            <img class="card-img" src="./recursos/imagenes/monitoreo.png" alt="Puntos de monitoreo">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card" onclick="window.location.href='flujoTuberias.html'">
+          <div class="card-body">
+            <h5 class="card-title">Flujos y reportes</h5>
+            <img class="card-img" src="./recursos/imagenes/flujos.png" alt="Flujos y reportes">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card" onclick="window.location.href='fugasDetect.html'">
+          <div class="card-body">
+            <h5 class="card-title">Fugas</h5>
+            <img class="card-img" src="./recursos/imagenes/fugas1.png" alt="Fugas">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card" onclick="window.location.href='LoginA.html'">
+          <div class="card-body">
+            <h5 class="card-title">Cerrar Sesión</h5>
+            <img class="card-img" src="./recursos/imagenes/cerrarSesion.png" alt="Cerrar Sesión">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="aviso-logo">
+        <img src="./recursos/imagenes/av.png" alt="Aviso Logo">
+    </div>
+    <div id="aviso-texto">
+        Aviso de privacidad
+    </div>
+    <div id="sistemas-logo">
+        <img src="./recursos/imagenes/Log.png" alt="Sistemas Logo">
+    </div>
+    <div id="sistemas-texto">
+        Sistemas Vanguardistas de México
+    </div>
+    <div id="terminos-logo">
+        <img src="./recursos/imagenes/te.png" alt="Términos Logo">
+    </div>
+    <div id="terminos-texto">
+        Términos de uso
+    </div>
+</footer>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

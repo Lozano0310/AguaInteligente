@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Color de fondo del cuerpo */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #80D7F3; /* Color de fondo del encabezado */
+            color: #000000; /* Color del texto */
+            padding: 10px; /* Espaciado interno */
+            text-align: center;
+            display: flex; /* Activa el modelo de caja flexible */
+            justify-content: space-between; /* Distribuye los elementos a lo largo del eje principal */
+            align-items: center; /* Centra los elementos verticalmente */
+        }
+
+        header img {
+            max-width: 300px; /* Ajusta el ancho máximo de la primera imagen */
+            height: auto; /* Permite que la altura se ajuste automáticamente */
+        }
+
+        #logo {
+            flex: 1; /* Hace que el logo ocupe todo el espacio posible */
+        }
+
+        #texto {
+            flex: 2; /* Hace que el texto ocupe el doble de espacio que las imágenes */
+        }
+
+        #imagen-derecha {
+            max-width: 100px; /* Ajusta el ancho máximo de la segunda imagen */
+            order: 3; /* Cambia el orden de visualización a la derecha */
+        }
+
+        #login-box {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #000; /* Borde negro */          
+            background-color: #80D7F3;
+            text-align: center;
+            margin: 20px auto; /* Centra el formulario */
+        }
+
+        #login-box img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        #user-type {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        #login-button {
+            background-color: #80AEF3; /* Color de fondo del botón */
+            color: #fff; /* Color del texto del botón */
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%; /* Ajusta el ancho al 100% */
+        }
+
+        #login-button img {
+            max-width: 20px;
+            margin-left: 5px;
+        }
+
+        footer {
+            background-color: #80D7F3; /* Color de fondo del pie de página */
+            color: #000000; /* Color del texto */
+            padding: 10px; /* Espaciado interno */
+            text-align: center;
+            display: flex; /* Activa el modelo de caja flexible */
+            justify-content: space-between; /* Distribuye los elementos a lo largo del eje principal */
+            align-items: center; /* Centra los elementos verticalmente */
+            margin-top: auto;
+        }
+
+        footer img {
+            max-width: 80px; /* Ajusta el ancho máximo de los logos en el pie de página */
+            height: auto; /* Permite que la altura se ajuste automáticamente */
+        }
+
+        #aviso-logo, #sistemas-logo, #terminos-logo {
+            flex: 1; /* Hace que los logos ocupen todo el espacio posible */
+        }
+
+        #aviso-texto, #sistemas-texto, #terminos-texto {
+            flex: 2; /* Hace que los textos ocupen el doble de espacio que los logos */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="conagua.png" alt="Imagen Izquierda">
+        <div id="logo">
+            <h1>Agua Inteligente</h1>
+        </div>
+        <img id="imagen-derecha" src="web.png" alt="Imagen Derecha">
+    </header>
+
+    <div id="login-box">
+        <img src="usu.png" alt="Centro Logo">
+        <div id="user-type">Usuario/Administrador</div>
+        <input type="text" placeholder="Usuario">
+        <div>Contraseña</div>
+        <input type="password" placeholder="Contraseña">
+        <button id="login-button">
+            Acceder
+            <img src="acc.png" alt="Logo">
+        </button>
+    </div>
+
+    <footer>
+        <div id="aviso-logo">
+            <img src="av.png" alt="Aviso Logo">
+        </div>
+        <div id="aviso-texto">
+            Aviso de privacidad
+        </div>
+        <div id="sistemas-logo">
+            <img src="Log.png" alt="Sistemas Logo">
+        </div>
+        <div id="sistemas-texto">
+            Sistemas Vanguardistas de México
+        </div>
+        <div id="terminos-logo">
+            <img src="te.png" alt="Términos Logo">
+        </div>
+        <div id="terminos-texto">
+            Términos de uso
+        </div>
+    </footer>
+
+</body>
+</html>
